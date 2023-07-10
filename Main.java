@@ -53,7 +53,8 @@ public class Main {
 					option = Integer.parseInt(br.readLine());
 					switch(option)
 					{
-					case 1: System.out.println("Enter product name");
+					case 1:
+					System.out.println("Enter product name");
 					String productName = br.readLine();
 					System.out.println("Enter product id");
 					int productId = Integer.parseInt(br.readLine());
@@ -71,8 +72,12 @@ public class Main {
 					productdao.addProduct(product);
 					System.out.println("---------------------------------------------");
 					break;
-					case 2: productdao.display();break;
-					case 3: break;
+					case 2: 
+						productdao.display();
+						break;
+					case 3: 		
+						System.out.println("Logged out Succesfully");
+						break;
 					}
 				}
 				while(option != 3);
@@ -83,8 +88,8 @@ public class Main {
 			}
 			break;
 			
-			
-			case 2: System.out.println("---------------------------------------------");
+			case 2:
+			System.out.println("---------------------------------------------");
 			System.out.println("Enter username");
 			String agentusername = br.readLine();
 			System.out.println("Enter password");
@@ -106,7 +111,8 @@ public class Main {
 					
 					switch(option)
 					{
-						case 1: System.out.println("Buy/Sell");
+						case 1:
+						System.out.println("Buy/Sell");
 						String agent = br.readLine();
 						
 						if(agent.equalsIgnoreCase("buy"))
@@ -159,7 +165,9 @@ public class Main {
 				System.out.println("Username & Password is not correct");
 			}
 			break;
-			case 3: System.exit(0);
+			case 3: 
+				System.out.println("Logged out Succesfully");
+				System.exit(0);
 
 		  }
 
